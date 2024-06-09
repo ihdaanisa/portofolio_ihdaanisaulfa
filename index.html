@@ -166,14 +166,13 @@
              <div class="col">
                 <div class="contact-info">
                     <h2>Hubungi saya <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: ihdaanisaulfa.com</p>
+                    <p><i class="uil uil-envelope"></i> Email: ihdaanisaulfa@gmail.com</p>
                     <p><i class="uil uil-phone"></i> Tel: +6288203365621</p>
                 </div>
              </div>
              <div class="col">
-                <form method="POST" action="send_email.php"></form>
-                <div class="form-control">
-                    
+                <form id="contact-form" action="https://formspree.io/f/moqggqqw" method="POST">
+                    <div class="form-control">
                         <div class="form-inputs">
                             <input type="text" class="input-field" name="name" placeholder="Name" required>
                             <input type="email" class="input-field" name="email" placeholder="Email" required>
@@ -182,10 +181,12 @@
                             <textarea name="message" placeholder="Message" required></textarea>
                         </div>
                         <div class="form-button">
-                            <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                            <button type="submit" class="btn">Send</button>
                         </div>
-                    </form>
-             </div>
+                    </div>
+                    <div class="loader" style="display:none;">Loading...</div>
+                </form>
+                
           </div>
        </section>
     </main>
@@ -230,7 +231,7 @@
 
     <!-- ----- MAIN JS ----- -->
     <script src="assets/js/main.js"></script>
-
+   
     <!-- Script for PDF generation -->
     
     <script>
@@ -254,5 +255,6 @@
             });
         });
     </script>
+
 </body>
 </html>
