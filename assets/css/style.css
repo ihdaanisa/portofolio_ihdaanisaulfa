@@ -636,3 +636,65 @@ footer{
         width: 100%;
     }
 }
+/* ----- MEDIA QUERY == 380px / RESPONSIVE ----- */
+@media only screen and (max-width: 380px){
+    .nav-name{
+        font-size: 24px;
+    }
+    .featured-name{
+        font-size: 30px;
+    }
+    .featured-text-info{
+        font-size: 14px;
+    }
+    .featured-text-btn .btn{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .social_icons{
+        gap: 20px;
+    }
+    .icon{
+        width: 35px;
+        height: 35px;
+    }
+    .image, .image img{
+        width: 120px;
+        height: 120px;
+    }
+    .about-info p{
+        font-size: 14px;
+    }
+    .project-box{
+        width: 100%;
+        height: 200px;
+    }
+    .contact-info{
+        height: auto;
+        padding: 20px 10px;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+    .input-field, textarea{
+        width: 100%;
+        font-size: 14px;
+        padding-inline: 10px;
+    }
+    .form-button>.btn{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    footer p{
+        font-size: 18px;
+    }
+    .footer_menu_list a{
+        font-size: 14px;
+    }
+    .footer-social-icons{
+        gap: 20px;
+    }
+    .bottom-footer{
+        font-size: 12px;
+    }
+}
