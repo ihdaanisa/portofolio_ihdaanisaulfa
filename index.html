@@ -62,12 +62,11 @@
                 <p>I'm <span class="typedText"></span></p>
             </div>
             <div class="featured-text-info">
-                <p>Pengembang frontend dan backend berpengalaman dengan hasrat untuk membuat situs web yang memukau secara visual dan ramah pengguna.
+                <p>Berpengalaman dalam pengembangan frontend dan backend.
                 </p>
             </div>
-            <div class="featured-text-btn">
+            <div class="nav-button">
                 <button id="getFile" class="btn">Download CV <i class="uil uil-file-alt"></i></button>
-
             </div>
             <div class="social_icons">
                 <div class="icon"><a href="https://instagram.com/ihdaanisaulfa_3?utm_medium+copy_link" target="_blank"><i class="uil uil-instagram"></i></a></div>
@@ -236,25 +235,26 @@
     <script src="assets/js/main.js"></script>
 
     <!-- Script for PDF generation -->
-    
     <script>
-        $('#getFile').on('click', function () {
-            $.ajax({
-                url: 'assets/CV IHDA ANISA ULFA.pdf', // URL to the file on your server
-                method: 'GET',
-                xhrFields: {
-                    responseType: 'blob'
-                },
-                success: function (data) {
-                    var a = document.createElement('a');
-                    var url = window.URL.createObjectURL(data);
-                    a.href = url;
-                    a.download = 'CV Ihda Anisa Ulfa.pdf';
-                    document.body.append(a);
-                    a.click();
-                    a.remove();
-                    window.URL.revokeObjectURL(url);
-                }
+        $(document).ready(function () {
+            $('#getFile').one('click', function () {
+                $.ajax({
+                    url: 'assets/CV IHDA ANISA ULFA.pdf', // URL to the file on your server
+                    method: 'GET',
+                    xhrFields: {
+                        responseType: 'blob'
+                    },
+                    success: function (data) {
+                        var a = document.createElement('a');
+                        var url = window.URL.createObjectURL(data);
+                        a.href = url;
+                        a.download = 'CV Ihda Anisa Ulfa.pdf';
+                        document.body.append(a);
+                        a.click();
+                        a.remove();
+                        window.URL.revokeObjectURL(url);
+                    }
+                });
             });
         });
     </script>
