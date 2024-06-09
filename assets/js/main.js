@@ -33,7 +33,7 @@ function myMenuFunction(){
 
 /* ----- TYPING EFFECT ----- */
  var typingEffect = new Typed(".typedText",{
-    strings : ["Ihda Anisa Ulfa","Manajemen Informatika"," Mahasiswa Universitas Negeri Surabaya","Developer"],
+    strings : ["Ihda Anisa Ulfa","Mahasiswa Manajemen Informatika"," Mahasiswa Universitas Negeri Surabaya","Developer"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,

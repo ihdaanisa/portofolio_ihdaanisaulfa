@@ -64,7 +64,7 @@ html{
     margin-left: 10px;
 }
 .btn:hover{
-    background: var(--second-color);
+    background: var(--first-color-hover);
     color: var(--color-white);
 }
 
@@ -101,7 +101,7 @@ nav{
 .nav-name{
     font-size: 30px;
     font-weight: 600;
-    color: var(--text-color-third);
+    color: var(--first-color-hover);
 }
 .nav-logo span{
     position: absolute;
@@ -133,7 +133,7 @@ nav{
 }
 .active-link{
     position: relative;
-    color: var(--first-color);
+    color: var(--first-color-hover);
     transition: .3;
 }
 .active-link::after{
@@ -188,7 +188,7 @@ nav{
 }
 .typedText{
     text-transform: capitalize;
-    color: var(--text-color-third);
+    color: var(--first-color-hover);
 }
 .featured-text-info{
     font-size: 15px;
@@ -222,7 +222,7 @@ nav{
     cursor: pointer;
 }
 .icon:hover{
-    color: var(--first-color);
+    color: var(--first-color-hover);
 }
 
 /* ----- FEATURED IMAGE BOX ----- */
@@ -264,7 +264,7 @@ nav{
    height: 50px;
    gap: 5px;
    text-decoration: none;
-   color: var(--text-color-second);
+   color: var(--first-color-hover);
    background: var(--color-white);
    border-radius: 30px;
    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
@@ -318,7 +318,7 @@ h3{
     padding-inline: 20px;
     width: 100%;
     background: var(--color-white);
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    box-shadow: 1px 8px 10px 2px var(--first-color-hover);
     border-radius: 20px;
 }
 .about-info p{
@@ -352,7 +352,7 @@ h3{
 }
 .skills-list span{
     font-size: 14px;
-    background: var(--first-color);
+    background: var(--first-color-hover);
     color: var(--color-white);
     padding: 2px 10px;
     border-radius: 5px;
@@ -381,7 +381,7 @@ h3{
 }
 .project-box>i{
     font-size: 50px;
-    color: #00B5E7;
+    color: var(--first-color-hover);
     margin-bottom: 25px;
 }
 .project-box label{
@@ -392,7 +392,7 @@ h3{
     content: "";
     position: absolute;
     bottom: -100%;
-    background: var(--second-color);
+    background: var(--first-color-hover);
     width: 100%;
     height: 100%;
     transition: .4s;
@@ -419,7 +419,7 @@ h3{
     padding: 20px 30px;
     width: 100%;
     height: 315px;
-    background: var(--second-color);
+    background: var(--first-color-hover);
     border-radius: 10px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
@@ -483,7 +483,7 @@ textarea{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--second-color);
+    background: var(--first-color-hover);
     color: var(--color-white);
 }
 .form-button>.btn:hover{
