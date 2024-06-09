@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // Tentukan alamat email penerima
-    $to = "your-email@example.com";
+    $to = "ihdaanisaulfa@gmail.com";
     $subject = "New message from $name";
 
     // Buat isi email
