@@ -698,3 +698,46 @@ footer{
         font-size: 12px;
     }
 }
+@media (max-width: 330px) {
+    nav {
+        padding-inline: 2vw;
+    }
+    .nav_menu_list {
+        display: none;
+    }
+    .nav-logo {
+        font-size: 25px;
+    }
+    .featured-text .featured-name {
+        font-size: 25px;
+    }
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+    .image img {
+        width: 200px;
+        height: 200px;
+    }
+    .featured-text-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .scroll-btn {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .about-info, .service-box, .portfolio-card, .info {
+        padding: 10px;
+    }
+    .service-box i {
+        font-size: 30px;
+    }
+    .portfolio-card img {
+        height: 150px;
+    }
+    .social_icons {
+        gap: 15px;
+    }
+}
