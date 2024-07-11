@@ -409,6 +409,146 @@ h3{
     z-index: 2;
 }
 
+/* ----- PORTFOLIO ----- */
+/* Portfolio Section */
+.portfolio {
+    background: var(--second-bg-color);
+    padding: 4rem 0;
+}
+
+.portfolio h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  var(--first-color-hover);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-box:hover .portfolio-layer {
+    opacity: 1;
+}
+
+.portfolio-layer h4 {
+    margin-bottom: 10px;
+}
+
+.portfolio-layer p {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.portfolio-layer a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.portfolio-layer a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio h2 {
+        font-size: 1.5rem; /* Responsive font size */
+    }
+
+    .portfolio-layer h4 {
+        font-size: 1rem; /* Responsive font size */
+    }
+
+    .portfolio-layer p {
+        font-size: 0.7rem; /* Responsive font size */
+    }
+}
+@media (max-width: 300px) {
+    .portfolio-container {
+        gap: 10px; 
+        padding: 10px;
+    }
+
+    .portfolio-box {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .portfolio h2 {
+        font-size: 1.2rem; 
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-layer h4 {
+        font-size: 0.9rem; 
+    }
+
+    .portfolio-layer p {
+        font-size: 0.6rem; 
+    }
+
+    .portfolio-layer a {
+        font-size: 20px;
+    }
+}
 /* ----- CONTACT BOX ----- */
 .contact-info{
     position: relative;
