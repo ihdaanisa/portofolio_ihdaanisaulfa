@@ -336,6 +336,18 @@
             });
         });
     </script>
+<script>
+    const heart = document.createElement('div');
+    heart.className = 'heart';
+    document.body.appendChild(heart);
 
+    document.addEventListener('mousemove', function(e) {
+        // Offset the heart position slightly from the cursor
+        const offsetX = 20;
+        const offsetY = 20;
+        heart.style.left = `${e.pageX + offsetX}px`;
+        heart.style.top = `${e.pageY + offsetY}px`;
+    });
+</script>
 </body>
 </html>
