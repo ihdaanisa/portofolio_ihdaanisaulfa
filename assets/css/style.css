@@ -137,6 +137,7 @@ nav {
 
 .nav-logo {
     position: relative;
+    top: 14px; 
 }
 
 .nav-name {
@@ -504,7 +505,8 @@ h3{
 
 .portfolio-box img {
     width: 100%;
-    height: auto;
+    height: 315px;      
+    object-fit: cover;    
     transition: transform 0.3s ease;
 }
 
